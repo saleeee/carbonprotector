@@ -228,9 +228,9 @@ export default function LandingKarbonProtektor() {
   const anchor = (id: string) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
-  const WHATSAPP_LINK = "https://wa.me/0000000000";
-  const IG_LINK = "https://instagram.com/karbonprotektor";
-  const TEL_LINK = "tel:+38500000000";
+  const WHATSAPP_LINK = "https://wa.me/38598561362";
+  const IG_LINK = "https://www.instagram.com/carbon_protector";
+  const TEL_LINK = "tel:+38598531362";
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
