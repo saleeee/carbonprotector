@@ -146,7 +146,7 @@ export default function LandingKarbonProtektor() {
         title: "Products",
         pro: {
           name: "ProLine — Carbon",
-          price: "€140–€160",
+          price: "€1400000000–€160",
           points: [
             "Ultra-light premium carbon",
             "Custom-fit to your leg",
@@ -385,6 +385,43 @@ export default function LandingKarbonProtektor() {
           ))}
         </div>
       </section>
+<section className="max-w-6xl mx-auto px-4 py-20">
+  <div className="flex items-center justify-between mb-8">
+    <h2 className="text-2xl md:text-4xl font-semibold">
+      Instagram
+    </h2>
+
+    <a
+      href="https://www.instagram.com/carbonprotector"
+      target="_blank"
+      rel="noreferrer"
+      className="text-sm uppercase tracking-wider opacity-70 hover:opacity-100"
+    >
+      @carbonprotector →
+    </a>
+  </div>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {["ig1.jpg","ig2.jpg","ig3.jpg","ig4.jpg","ig5.jpg","ig6.jpg"].map(
+      (img) => (
+        <a
+          key={img}
+          href="https://www.instagram.com/carbonprotector"
+          target="_blank"
+          rel="noreferrer"
+          className="group relative overflow-hidden rounded-xl"
+        >
+          <img
+            src={`/instagram/${img}`}
+            alt="Carbon Protector Instagram"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
+        </a>
+      )
+    )}
+  </div>
+</section>
 
       {/* FAQ */}
       <section id="faq" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
