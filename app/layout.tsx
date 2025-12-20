@@ -29,7 +29,7 @@ export default function RootLayout({
       {/* Google Analytics */}
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        src="https://www.googletagmanager.com/gtag/js?id=G-SNW6D13SQL"
       />
       <script
         dangerouslySetInnerHTML={{
@@ -37,7 +37,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX', {
+            gtag('config', 'git add G-SNW6D13SQL', {
               page_path: window.location.pathname,
             });
           `,
