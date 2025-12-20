@@ -435,7 +435,7 @@ export default function LandingKarbonProtektor() {
           {[t.faq.q1, t.faq.q2, t.faq.q3].map((qa, i) => (
             <Card key={i} className="bg-neutral-900/60 border-neutral-800">
               <CardHeader>
-                <CardTitle>{qa.q}</CardTitle>
+                
               </CardHeader>
               <CardContent className="text-neutral-300 text-sm">{qa.a}</CardContent>
             </Card>
@@ -449,6 +449,9 @@ export default function LandingKarbonProtektor() {
           <div>
             <h2 className="text-2xl md:text-4xl font-semibold mb-4">{t.contact.title}</h2>
             <p className="text-neutral-300 mb-6">{t.contact.sub}</p>
+<CardTitle className="text-neutral-100">
+  {t.contact.title}
+</CardTitle>
 
             <div className="flex flex-wrap gap-3">
               <a href={WHATSAPP_LINK} target="_blank">
