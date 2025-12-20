@@ -372,17 +372,27 @@ export default function LandingKarbonProtektor() {
       </section>
 
       {/* GALLERY */}
-      <section id="gallery" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
-        <h2 className="text-2xl md:text-4xl font-semibold mb-8">{t.gallery.title}</h2>
+    <section id="gallery" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
+  <h2 className="text-2xl md:text-4xl font-semibold mb-8">
+    {t.gallery.title}
+  </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-            <div key={i} className="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800">
-              <img src="/hero-kostobrani.jpg" alt={`Gallery ${i}`} className="w-full h-full object-cover opacity-90" />
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {["g1.jpg","g2.jpg","g3.jpg","g4.jpg","g5.jpg","g6.jpg"].map((img) => (
+      <div
+        key={img}
+        className="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800"
+      >
+        <img
+          src={`/gallery/${img}`}
+          alt="Carbon Protector gallery"
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* REVIEWS */}
       <section id="reviews" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
@@ -419,7 +429,7 @@ export default function LandingKarbonProtektor() {
   </div>
 
   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-    {["ig1.jpg","ig2.jpg","ig3.jpg","ig4.jpg","ig5.jpg","ig6.jpg"].map(
+    {["ig1.jpg","ig2.jpg","ig3.jpg","ig4.jpg","ig6.jpg"].map(
       (img) => (
         <a
           key={img}
