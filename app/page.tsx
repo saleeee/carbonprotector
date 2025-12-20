@@ -318,12 +318,15 @@ export default function LandingKarbonProtektor() {
           {[{ key: "pro", ...t.products.pro }, { key: "basic", ...t.products.basic }, { key: "mask", ...t.products.mask }].map((p) => (
             <Card key={p.key} className="bg-neutral-900/60 border-neutral-800">
               <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <Shield className="w-5 h-5" /> {p.name}
-                  </span>
-                  <span className="text-emerald-400 font-semibold">{p.price}</span>
-                </CardTitle>
+                <CardTitle className="flex items-center justify-between text-neutral-100">
+  <span className="flex items-center gap-2">
+   {p.name}
+  </span>
+  <span className="text-emerald-400 font-semibold">
+    {p.price}
+  </span>
+</CardTitle>
+
               </CardHeader>
 
               <CardContent className="text-sm text-neutral-300">
