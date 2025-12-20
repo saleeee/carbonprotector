@@ -239,8 +239,10 @@ export default function LandingKarbonProtektor() {
       <header className="sticky top-0 z-40 backdrop-blur bg-neutral-950/70 border-b border-neutral-800">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Shield className="w-6 h-6" />
-            <span className="font-semibold">Karbon Protektor</span>
+            <img src="/logo.png"
+                  alt="Carbon Protector logo"
+                  className="h-8 w-auto"/>
+
             <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-emerald-600/20 border border-emerald-600/40">
               {t.hero.badge}
             </span>
