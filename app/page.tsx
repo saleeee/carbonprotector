@@ -239,9 +239,19 @@ export default function LandingKarbonProtektor() {
       <header className="sticky top-0 z-40 backdrop-blur bg-neutral-950/70 border-b border-neutral-800">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.png"
-                  alt="Carbon Protector logo"
-                  className="h-8 w-auto"/>
+           <motion.a
+  href="/"
+  initial={{ opacity: 0, y: -6 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.4 }}
+  className="flex items-center"
+>
+  <img
+    src="/logo.png"
+    alt="Carbon Protector logo"
+    className="h-8 w-auto cursor-pointer hover:opacity-90"
+  />
+</motion.a>
 
             <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-emerald-600/20 border border-emerald-600/40">
               {t.hero.badge}
