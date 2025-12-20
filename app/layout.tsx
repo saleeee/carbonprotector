@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Karbonski i plastični kostobrani po mjeri",
+  title: "Carbon Protector ⚽ Karbonski kostobrani po mjeri",
+
   description: "ProLine (karbon) i BasicLine (plastika) s dizajnom po želji. Zaštitne karbonske maske izrađene u 48 h.",
 };
 
