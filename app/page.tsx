@@ -17,6 +17,7 @@ import {
   PackageOpen,
   Zap,
 } from "lucide-react";
+import { HelpCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function LandingKarbonProtektor() {
@@ -427,21 +428,38 @@ export default function LandingKarbonProtektor() {
   </div>
 </section>
 
-      {/* FAQ */}
-      <section id="faq" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
-        <h2 className="text-2xl md:text-4xl font-semibold mb-8">{t.faq.title}</h2>
+   {/* FAQ */}
+<section id="faq" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
+  <h2 className="text-2xl md:text-4xl font-semibold mb-10 text-white">
+    {t.faq.title}
+  </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {[t.faq.q1, t.faq.q2, t.faq.q3].map((qa, i) => (
-            <Card key={i} className="bg-neutral-900/60 border-neutral-800">
-              <CardHeader>
-                
-              </CardHeader>
-              <CardContent className="text-neutral-300 text-sm">{qa.a}</CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+  <div className="grid md:grid-cols-3 gap-6">
+    {[t.faq.q1, t.faq.q2, t.faq.q3].map((qa, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: i * 0.1 }}
+        viewport={{ once: true }}
+      >
+        <Card className="bg-neutral-900/70 border border-neutral-800 hover:border-yellow-400/60 transition-colors">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-white text-lg">
+              <HelpCircle className="w-5 h-5 text-yellow-400" />
+              {qa.q}
+            </CardTitle>
+          </CardHeader>
+
+          <CardContent className="text-neutral-300 text-sm leading-relaxed">
+            {qa.a}
+          </CardContent>
+        </Card>
+      </motion.div>
+    ))}
+  </div>
+</section>
+
 
       {/* CONTACT */}
       <section id="contact" className="max-w-6xl mx-auto px-4 py-16 md:py-24">
