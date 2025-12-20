@@ -392,7 +392,7 @@ export default function LandingKarbonProtektor() {
     </h2>
 
     <a
-      href="https://www.instagram.com/carbonprotector"
+      href="https://www.instagram.com/carbon_protector"
       target="_blank"
       rel="noreferrer"
       className="text-sm uppercase tracking-wider opacity-70 hover:opacity-100"
@@ -406,7 +406,7 @@ export default function LandingKarbonProtektor() {
       (img) => (
         <a
           key={img}
-          href="https://www.instagram.com/carbonprotector"
+          href="https://www.instagram.com/carbon_protector"
           target="_blank"
           rel="noreferrer"
           className="group relative overflow-hidden rounded-xl"
