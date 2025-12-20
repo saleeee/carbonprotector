@@ -379,9 +379,10 @@ export default function LandingKarbonProtektor() {
           {t.reviews.items.map((r, idx) => (
             <Card key={idx} className="bg-neutral-900/60 border-neutral-800">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Star className="w-5 h-5 text-yellow-400" /> {r.name}
-                </CardTitle>
+              <CardTitle className="flex items-center gap-2 text-neutral-100">
+  <Star className="w-5 h-5 text-yellow-400" /> {r.name}
+</CardTitle>
+
               </CardHeader>
               <CardContent className="text-neutral-300 text-sm">“{r.text}”</CardContent>
             </Card>
